@@ -1,12 +1,9 @@
 Package: intro.to.golem
-Title: An Amazing Shiny App for Golem
+Title: Introduction to Golem
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
+    person("Howard", "Baik", , "hbaik@integral-corp.com", role = c("aut", "cre"))
+Description: Getting acquainted with the golem framework.
 License: What license is it under?
 Imports: 
     config,
