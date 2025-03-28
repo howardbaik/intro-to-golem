@@ -5,12 +5,15 @@ Authors@R:
     person("Howard", "Baik", , "hbaik@integral-corp.com", role = c("aut", "cre"))
 Description: Getting acquainted with the golem framework.
 License: What license is it under?
+Depends: 
+    R (>= 3.5)
 Imports: 
+    bslib,
     config,
+    echarts4r,
     golem,
+    reactable,
     shiny
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
-Depends: 
-    R (>= 3.5)
