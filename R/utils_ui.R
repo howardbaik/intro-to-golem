@@ -1,10 +1,12 @@
-#' ui 
+#' Title
 #'
-#' @description A utils function
+#' @param data 
+#' @param column 
 #'
-#' @return The return value, if any, from executing the utility.
+#' @returns
+#' @export
 #'
-#' @noRd
+#' @examples
 get_choices <- function(data, column) {
   data[[column]] |> unique() |> sort()
 }
