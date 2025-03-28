@@ -17,13 +17,13 @@ app_ui <- function(request) {
         shiny::selectInput(
           inputId = "state",
           label = "Select a State",
-          choices = sales_data$STATE |> unique() |> sort()
+          choices = get_choices(sales_data, "STATE")
         ),
         
         shiny::selectInput(
           inputId = "product_line",
           label = "Select a Product Line",
-          choices = sales_data$PRODUCTLINE |> unique() |> sort()
+          choices = get_choices(sales_data, "PRODUCTLINE")
         ),
         
         shiny::actionButton(
