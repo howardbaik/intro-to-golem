@@ -8,10 +8,7 @@ app_server <- function(input, output, session) {
   # Your application server logic
   rctv_data_filtered <- mod_filters_server("filters_1")
   
-  # Create output chart
-  output$chart_sales_by_city <- echarts4r::renderEcharts4r({
-    create_chart(rctv_data_filtered())
-  })
+  mod_page1_server("page1_1", data = rctv_data_filtered)
   
   # Create output table
   output$table_orders <- reactable::renderReactable({
